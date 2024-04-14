@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KaRAM281 Obfuscator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <section class="hero is-dark is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-two-thirds-tablet is-three-quarter-desktop">
+                        <h1 class="title">تشفير Lua لسكربتات فايف ام</h1>
+                        <p>أداة تشويش بسيطة لحماية نصوصك البرمجية (ليست آمنة بنسبة 100%، ولكنها آمنة)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-two-thirds-tablet is-half-desktop">
+                    <div class="form">
+                        <div class="field">
+                            <label class="label">ملف لوا</label>
+                            <div class="control">
+                                <div class="file has-name">
+                                    <label class="file-label">
+                                        <input class="file-input" type="file" accept=".lua,.txt" id="file">
+                                        <span class="file-cta"><span class="file-icon"><i class="fas fa-upload"></i></span><span class="file-label">Select File…</span></span>
+                                        <span class="file-name" id="file-name">لم يتم اختيار اي ملف.</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="help">لن يتم تحميل ملفك على أي خادم.</p>
+                        </div>
+
+                        <div class="field">
+                            <label class="checkbox">
+                                تشفير بايت كود
+                                <input type="checkbox" id="bytecode">
+                                <p class="help">هل تريد حفظ الكود المبهم كرمز ثانوي؟ (سيؤدي ذلك إلى جعل الملف أكبر (مثل 3x أكبر) ويصعب إزالة التشويش</p>
+                            </label>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link is-medium" id="encrypt"><span class="file-icon"><i class="fas fa-download"></i></span>Obfuscate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="bundle.js"></script>
+<script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'874463167a760498',t:'MTcxMzEwNDk1Ni4wMDcwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
+
